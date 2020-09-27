@@ -25,3 +25,7 @@ This script can deallocate and reallocate multiple Public IPs back to the Azure 
 ### Spare a dollar for a broke IT Professional
 
 [Buy me a Coffee](https://www.buymeacoffee.com/jcbagtas)
+
+[View my Blog Post](https://blog.jcbagtas.com/2020/09/turn-azure-firewall-on-or-off-on.html)
+
+[My Website](https://jcbagtas.com/)
