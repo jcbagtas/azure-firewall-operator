@@ -79,7 +79,7 @@ Switch ($operation.ToLower()) {
         try {
             $fwObject.Deallocate()
             write-output "Stopping Firewall: $firewallName"
-            # Set-AzFirewall -AzureFirewall $fwObject | Out-Null
+            Set-AzFirewall -AzureFirewall $fwObject | Out-Null
         } catch {
             throw "Could not deallocate Firewall: $($fwObject.Name). $($_.Exception.Message)"
         }
@@ -120,7 +120,6 @@ Switch ($operation.ToLower()) {
             
 
             Foreach ($pip in $fwIpConfig.PublicIPAddresses) {
-                write-verbose -message ("$pip - $prim")
                 If ($pip -notmatch $prim) {
                     try {
                         write-verbose -message "Allocating Additional Public IP: $pip"
@@ -133,7 +132,7 @@ Switch ($operation.ToLower()) {
             }
             #Update / Start the firewall instance
             write-output "Starting Firewall: $firewallName"
-            # Set-AzFirewall -AzureFirewall $fwObject
+            Set-AzFirewall -AzureFirewall $fwObject
         } catch {
             throw "Could not Azure Firewall: $($fwObject.Name). $($_.Exception.Message)"
         } 
