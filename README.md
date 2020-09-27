@@ -22,8 +22,6 @@ This script can deallocate and reallocate multiple Public IPs back to the Azure 
 |container|string|Name of the Storage Acount Container|`true`|
 |firewallinfofile|string|Strictly named "**FirewallInfo.json**" to prevent confusion. To be saved as a Blob|`true`|
 
-## Did this script help you?
-
-Spare a dollar for a broke IT Professional.
+### Spare a dollar for a broke IT Professional
 
 [Buy me a Coffee](https://www.buymeacoffee.com/jcbagtas)
